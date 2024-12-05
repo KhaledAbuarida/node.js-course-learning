@@ -4,22 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      .main-header {
+        width: 100%;
+        height: 4rem;
+        background-color: #cdb023;
+      }
+
+      .main-header__nav {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .main-header__nav-list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+
+      .main-header__nav-list-item {
+        list-style: none;
+        padding-left: 2rem;
+      }
+
+      .main-header__nav-list-item a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .main-header__nav-list-item a:hover,
+      .main-header__nav-list-item a:active,
+      .main-header__nav-list-item a.active {
+        color: blueviolet;
+      }
+
+      .main-content {
+        padding: 2rem;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="/"> Shop </a>
+    <header class="main-header">
+      <nav class="main-header__nav">
+        <ul class="main-header__nav-list">
+          <li class="main-header__nav-list-item">
+            <a class="active" href="/"> Shop </a>
           </li>
-          <li>
+          <li class="main-header__nav-list-item">
             <a href="/add-product"> Add Product </a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="main-content">
       <h1>My Products</h1>
       <p>List of all products...</p>
     </main>
